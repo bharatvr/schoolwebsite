@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+		<head>
+		<meta charset="UTF-8">
+		<title>School Name</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+		<!-- favicon -->
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<!-- bootstrap 3 stylesheets -->
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="all" />
+		<!-- stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+		<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+		<link rel="stylesheet" type="text/css" href="css/settings.css" media="all" />
+		<!-- responsive stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+		<!-- Load Fonts via Google Fonts API -->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Karla:400,700,400italic,700italic" />
+		<!-- javascripts -->
+		<script type="text/javascript" src="js/modernizr.custom.17475.js"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.flexslider-min.js"></script>
+		<script src="js/script.js"></script>
+		<!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+		<script type="text/javascript" src="js/jquery.plugins.min.js"></script>
+		<script type="text/javascript" src="js/jquery.revolution.min.js"></script>
+		<!--[if lt IE 9]><script type="text/javascript" src="js/html5shiv.js"></script><![endif]-->
+		<script type="text/javascript">
+		$(document).ready(function() {
+			// revolution slider
+			revapi = $("#content-slider").revolution({
+				delay: 6000,
+				startwidth: 1170,
+				startheight:500,
+				hideThumbs: 10,
+				fullWidth: "on",
+				fullScreen: "off",
+				fullScreenOffsetContainer: "",
+				navigationVOffset:475
+			});
+			
+			// initilize datepicker
+			$(".date-picker").datepicker();
+		});
+
+
+	    $(window).load(function(){
+	      $('.carousel').flexslider({
+			animation: "fade",
+			animationLoop: true,
+			controlNav: false,	
+		    maxItems: 1,
+			pausePlay: false,
+			mousewheel:true,
+			start: function(slider){
+			  $('body').removeClass('loading');
+			}
+	      });
+	    });
+
+
+		</script>
+		</head>
+		<body>
+        <div id="wrapper">
+          <header>
+            <div id="top-header">
+              <div class="container">
+                <div class="row top-row">
+                  <div class="col-md-6">
+                    <div class="left-part alignleft"> <span class="contact-email small">info@schoolname.com</span> <span class="contact-phone small">+91 XXXX XXXX XX</span> <span class="contact-fax small">+91 XXXX XXXX XX</span>
+                      <ul class="social-media header-social">
+                        <li><a class="sm-twitter" href="#"><span>Twitter</span></a></li>
+                        <li><a class="sm-facebook" href="#"><span>Facebook</span></a></li>
+                        <li><a class="sm-googleplus" href="#"><span>Google+</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="right-part alignright"> <span class="top-link small"><a href="#">Login/Register</a></span><span class="top-link small"><a href="#">Contact</a></span> <span class="top-link small"><a href="#">Activities</a></span> <span class="top-link small"><a href="#">Online Admission</a></span> <span class="top-link small"><a href="#">Info Gallery</a></span> </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="main-header">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3"> <a id="site-logo" href="#"> <img src="images/logo.jpg" alt="schoolname " /> </a> </div>
+                  <div class="col-md-9">
+                    <nav class="main-nav"> <span>MENU</span>
+                      <ul id="main-menu">
+                        <li><a href="#" title="Home"><img src="images/home.png"/></a></li>
+                        <li><a href="#" title="">School</a>
+                          <ul>
+                            <li><a href="#">CBSE Result 2018-2019</a></li>
+                          </ul>
+                        </li>
+                        <li><a title="" href="#">Events & Achievements</a></li>
+                        <li><a title="" href="#">Exams</a> </li>
+                        <li><a title="" href="#">Photo Gallery</a></li>
+                        <li><a title="" href="#">Notices & Circulars</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div id="main-slider">
+            <div id="content-slider">
+              <ul>
+                <!-- START Slide 1 -->
+                <li data-transition="fade" data-slotamount="5" data-masterspeed="700"> <img src="images/slide-image-1.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" /> 
+                  <!-- LAYER NR. 1 -->
+                  <div class="caption caption-blue sft stt headline text-upper"
+								data-x="0"
+								data-y="10"
+								data-speed="600"
+								data-start="2000"
+								data-easing="Power3.easeOut"
+								data-endspeed="400"
+								data-endeasing="Power4.easeIn"
+								data-captionhidden="off"
+								style="z-index:6;font-size:18px;">Fusce auctor malesuada ante</div>
+                  <!-- LAYER NR. 2 -->
+                  <div class="caption caption-white sfr stl slider-heading text-upper"
+								data-x="0"
+								data-y="50"
+								data-speed="1000"
+								data-start="1800"
+								data-easing="Power2.easeOut"
+								data-endspeed="600"
+								data-endeasing="Power3.easeIn"
+								data-captionhidden="off"
+								style="z-index:6;font-size:48px; ">Nulla vel venenatis erat </div>
+                  <!-- LAYER NR. 3 -->
+                  <div class="caption caption-black sfb stb headline text-upper"
+								data-x="0"
+								data-y="135"
+								data-speed="600"
+								data-start="1500"
+								data-easing="Power4.easeOut"
+								data-endspeed="500"
+								data-endeasing="Power1.easeIn"
+								data-captionhidden="off"
+								style="z-index:6"> Curabitur et nunc auctor, dapibus sapien nec, sollicitudin urna. </div>
+                </li>
+                <!-- END Slide 1 --> 
+                <!-- START Slide 2 -->
+                <li data-transition="fade" data-slotamount="7" data-masterspeed="1000"> <img src="images/slide-image-2.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" /> 
+                  <!-- LAYER NR. 1 -->
+                  <div class="caption caption-blue sfl str headline text-upper"
+								data-x="0"
+								data-y="10"
+								data-speed="600"
+								data-start="2000"
+								data-easing="Bounce.easeInOut"
+								data-endspeed="400"
+								data-endeasing="Bounce.easeOut"
+								data-captionhidden="off"
+								style="z-index:6;font-size:18px;">Phasellus eu elementum justo</div>
+                  <!-- LAYER NR. 2 -->
+                  <div class="caption caption-white sft stb slider-heading text-upper"
+								data-x="0"
+								data-y="50"
+								data-speed="500"
+								data-start="800"
+								data-easing="Expo.easeIn"
+								data-endspeed="600"
+								data-endeasing="Expo.easeInOut"
+								data-captionhidden="off"
+								style="z-index:6;font-size:48px; ">Scelerisque aliquam justo</div>
+                  <!-- LAYER NR. 3 -->
+                  <div class="caption caption-black sfr stl headline text-upper"
+								data-x="0"
+								data-y="135"
+								data-speed="600"
+								data-start="1500"
+								data-easing="Power0.easeOut"
+								data-endspeed="500"
+								data-endeasing="Back.easeOut"
+								data-captionhidden="off"
+								style="z-index:6">Mauris scelerisque tincidunt nulla nec pretium.</div>
+                </li>
+                <!-- START Slide 3 -->
+                <li data-transition="fade" data-slotamount="6" data-masterspeed="800"> <img src="images/slide-image-3.jpg" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat" /> 
+                  <!-- LAYER NR. 1 -->
+                  <div class="caption caption-blue sft stt headline text-upper"
+								data-x="0"
+								data-y="10"
+								data-speed="600"
+								data-start="2000"
+								data-easing="Power3.easeOut"
+								data-endspeed="400"
+								data-endeasing="Power4.easeIn"
+								data-captionhidden="off"
+								style="z-index:6;font-size:18px;">Fusce at nunc purus</div>
+                  <!-- LAYER NR. 2 -->
+                  <div class="caption caption-white sfr stl slider-heading text-upper"
+								data-x="0"
+								data-y="50"
+								data-speed="1000"
+								data-start="1800"
+								data-easing="Power2.easeOut"
+								data-endspeed="600"
+								data-endeasing="Power3.easeIn"
+								data-captionhidden="off"
+								style="z-index:6;font-size:48px; "> Nullam Pellentesque </div>
+                  <!-- LAYER NR. 3 -->
+                  <div class="caption caption-black sfb stb headline text-upper"
+								data-x="0"
+								data-y="135"
+								data-speed="600"
+								data-start="1500"
+								data-easing="Power4.easeOut"
+								data-endspeed="500"
+								data-endeasing="Power1.easeIn"
+								data-captionhidden="off"
+								style="z-index:6">Etiam ornare quam nisl, in suscipit tellus pellentesque vitae. </div>
+                </li>
+                <!-- END Slide 3 -->
+              </ul>
+            </div>
+            <div id="slider-overlay"></div>
+          </div>
+          <div class="main-contents">
+            <div class="container" id="home-page">
+              <form class="plan-tour">
+                <div class="plan-banner"> <a href="#">
+                  <div class="bluetab">Search</div>
+                  </a> 
+                 
+                </div>
+                <div class="top-fields">
+                  <div class="input-field col-md-6">
+                    <input type="text" placeholder="Search for Events, Exams and more...." />
+                  </div>
+                  <div class="input-field select col-md-4">
+                    <select id="">
+                      <option value="1">All</option>
+                    </select>
+                  </div>
+                  <div class="submit-btn col-md-2">
+                    <input type="submit" value="Search" />
+                  </div>
+                </div>
+              </form>
+              <div class="clearfix"></div>
+              <div class="row"> 
+                <!-- 1 -->
+                <section class="col-md-11 fd-column">
+                  <div class="featured-dest"> <span class="fd-image"> <img class="img-circle" src="images/ask_expert.jpg" alt="Ask the Expert" /> </span>
+                    <h4 class="text-center text-upper">Ask the Expert </h4>
+                    <p class="text-justify">Egestas dignissim a enim lorem a mus egestas risus porta?</p>
+                    <span class="btn-center"><a class="btn btn-primary text-upper" href="#" title="More Info">&raquo;</a></span> </div>
+                </section>
+                <!--  1 --> 
+                <!-- 2 -->
+                <section class="col-md-11 fd-column">
+                  <div class="featured-dest"> <span class="fd-image"> <img class="img-circle" src="images/seclect_course.jpg" alt="Select Course" /> </span>
+                    <h4 class="text-center text-upper">Select Course </h4>
+                    <p class="text-justify">Egestas dignissim a enim lorem a mus egestas risus porta?</p>
+                    <span class="btn-center"><a class="btn btn-primary text-upper" href="#" title="More Info">&raquo;</a></span> </div>
+                </section>
+                <!-- 2 --> 
+                <!-- 3 -->
+                <section class="col-md-11 fd-column">
+                  <div class="featured-dest"> <span class="fd-image"> <img class="img-circle" src="images/exam-list.jpg" alt="Exams List" /> </span>
+                    <h4 class="text-center text-upper">Exams List</h4>
+                    <p class="text-justify">Egestas dignissim a enim lorem a mus egestas risus porta?</p>
+                    <span class="btn-center"><a class="btn btn-primary text-upper" href="#" title="More Info">&raquo;</a></span> </div>
+                </section>
+                <!-- 3 --> 
+                <!-- 4 -->
+                <section class="col-md-11 fd-column">
+                  <div class="featured-dest"> <span class="fd-image"> <img class="img-circle" src="images/blog.jpg" alt="Blog" /> </span>
+                    <h4 class="text-center text-upper">Blog</h4>
+                    <p class="text-justify">Egestas dignissim a enim lorem a mus egestas risus porta? </p>
+                    <span class="btn-center"><a class="btn btn-primary text-upper" href="#" title="More Info">&raquo;</a></span> </div>
+                </section>
+                <!-- 4 --> 
+                <!-- 4 -->
+                <section class="col-md-11 fd-column">
+                  <div class="featured-dest"> <span class="fd-image"> <img class="img-circle" src="images/forum.jpg" alt="Forum" /> </span>
+                    <h4 class="text-center text-upper">Forum</h4>
+                    <p class="text-justify">Egestas dignissim a enim lorem a mus egestas risus porta?</p>
+                    <span class="btn-center"><a class="btn btn-primary text-upper" href="#" title="More Info">&raquo;</a></span> </div>
+                </section>
+                <!-- 4 --> 
+              </div>
+              <div class="row">
+                <section class="col-md-8">
+                  <h2 class="ft-heading text-upper">School Name</h2>
+                  <p class="headline"> Curabitur eget velit scelerisque, tempor ante eu, finibus ipsum. Suspendisse nec facilisis dolor! Donec vitae orci bibendum, pellentesque elit quis, sagittis nunc. Phasellus porttitor quam lectus, in vehicula erat vestibulum tincidunt. Quisque sed sapien nisl. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut id nunc finibus, elementum velit eu; convallis augue. Aliquam erat volutpat. Phasellus ut tortor sapien?<br>
+                    <br>
+                    Nulla dignissim dui nec feugiat tempor. Pellentesque tempus aliquet convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla lacinia arcu rhoncus feugiat. Proin sed nisl malesuada, vestibulum augue quis, semper lacus? Suspendisse aliquam nibh ipsum, id iaculis libero luctus at. Aenean imperdiet semper enim, sed pretium libero. Sed sed lacinia nunc. Mauris molestie feugiat semper. Quisque nec pulvinar risus. Ut quis enim dictum, pellentesque massa a, cursus purus! Pellentesque cursus enim vel leo vehicula hendrerit. Vivamus luctus quam nec dolor tincidunt, nec pulvinar eros fermentum. Nullam et nunc at orci tincidunt commodo in eu quam. </p>
+                </section>
+                <section class="col-md-4">
+                  <h2 class="ft-heading text-upper">Upcoming Events</h2>
+                  <div class="ft-event">
+                    <ul>
+                      <li>
+                        <div class="col-md-3">
+                          <div class="ft-event-ex">
+                            <p>Dec, 2019</p>
+                            <p class="bigtext">5</p>
+                            <p>05:30 PM</p>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="ft-event-txt">
+                            <p class="Gtext">Chandigarh School </p>
+                            <p class="Btext">EVOKE - 2019 Youth Summit</p>
+                            <p class="Ntext">The first Youth Summit of the year.</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col-md-3">
+                          <div class="ft-event-ex">
+                            <p>Dec, 2019</p>
+                            <p class="bigtext">11</p>
+                            <p>11:00 AM</p>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="ft-event-txt">
+                            <p class="Gtext">Doon Business School, Patna </p>
+                            <p class="Btext">BIZ Quiz and Brand AID</p>
+                            <p class="Ntext">Quiz event in Patna Women's schoolname</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col-md-3">
+                          <div class="ft-event-ex">
+                            <p>Dec, 2019</p>
+                            <p class="bigtext">15</p>
+                            <p>09:30 AM</p>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="ft-event-txt">
+                            <p class="Gtext">Mumbai International School of Business</p>
+                            <p class="Btext">Info Sessions</p>
+                            <p class="Ntext">MISB - would be conducting Info Sessions</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col-md-3">
+                          <div class="ft-event-ex">
+                            <p>Dec, 2019</p>
+                            <p class="bigtext">19</p>
+                            <p>05:30 PM</p>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="ft-event-txt">
+                            <p class="Gtext">ISB&M School of Technology</p>
+                            <p class="Btext">Orion 2019</p>
+                            <p class="Ntext">Cultural festival organised by ISB&M</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="col-md-3">
+                          <div class="ft-event-ex">
+                            <p>Dec, 2019</p>
+                            <p class="bigtext">5</p>
+                            <p>05:30 PM</p>
+                          </div>
+                        </div>
+                        <div class="col-md-9">
+                          <div class="ft-event-txt">
+                            <p class="Gtext">Chandigarh School </p>
+                            <p class="Btext">EVOKE - 2019 Youth Summit</p>
+                            <p class="Ntext">The first Youth Summit of the year.</p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+          <div id="ft-footer">
+            <div class="footer-overlay">
+              <div class="container">
+                <div class="row">
+                  <section class="col-md-12">
+                    <h3>From Principal's DesK</h3>
+                    <div class="col-md-2">
+                      <p style="text-align: center"> <span> <img class="img-responsive" src="images/principal.jpg"/> </span> <br>
+                        <b class="tl-author-title">Principal</b> </p>
+                    </div>
+                    <div class="col-md-10">
+                      <p style="text-align:justify; font-size: 18px;"> Nulla dignissim dui nec feugiat tempor. Pellentesque tempus aliquet convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla lacinia arcu rhoncus feugiat. Proin sed nisl malesuada, vestibulum augue quis, semper lacus? Suspendisse aliquam nibh ipsum, id iaculis libero luctus at. Aenean imperdiet semper enim, sed pretium libero. Sed sed lacinia nunc. Mauris molestie feugiat semper. Quisque nec pulvinar risus. Ut quis enim dictum, pellentesque massa a, cursus purus! Pellentesque cursus enim vel leo vehicula hendrerit. Vivamus luctus quam nec dolor tincidunt, nec pulvinar eros fermentum. Nullam et nunc at orci tincidunt commodo in eu quam. <br>
+                        <b class="tl-author-title">Read More...</b> </p>
+                    </div>
+                    <div class="clearfix"></div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          <footer>
+            <div class="main-contents bom-contents">
+              <div class="container">
+                <section class="col-md-12">
+                  <h2 class="ft-heading text-upper">Events Gallery</h2>
+                  <div class="carousel">
+                    <ul class="slides">
+                      <li>
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="ft-item"> <span class="ft-image"> <img src="images/1.jpg" /> </span> </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="ft-item"> <span class="ft-image"> <img src="images/2.jpg" /> </span> </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="ft-item"> <span class="ft-image"> <img src="images/3.jpg" /> </span> </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="ft-item"> <span class="ft-image"> <img src="images/4.jpg" /> </span> </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="row">
+                          <div class="col-md-3">
+                            <div class="ft-item"> <span class="ft-image"> <img src="images/5.jpg" /> </span> </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="ft-item"> <span class="ft-image"> <img src="images/6.jpg" /> </span> </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="ft-item"> <span class="ft-image"> <img src="images/7.jpg" /> </span> </div>
+                          </div>
+                          <div class="col-md-3">
+                            <div class="ft-item"> <span class="ft-image"> <img src="images/8.jpg" /> </span> </div>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div id="#ex-footer">
+              <div class="footer-overlay2">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <nav>
+                        <div  class="col-md-6" >
+                          <ul class="footer-menu">
+                            <li><a href="#" style="padding-left:0px;">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Private Policy</a></li>
+                            <li class="last-item"><a href="#">Sitemap</a></li>
+                          </ul>
+                        </div>
+                        <div  class="col-md-6 text-right" style="padding-top:10px;padding-bottom:10px; color:#FFFFFF"> <span>SUSBCRIBE TO OUR NEWSLETTER</span>
+                          <input type="text" value="Your Email address.."/>
+                          <input type="button" value="Yes Please..." class="newsletter-btn"/>
+                        </div>
+                      </nav>
+                      <div class="foot-boxs">
+                        <div class="foot-box col-md-3 text-right"> <span>Stay Connected</span>
+                          <ul class="social-media footer-social">
+                            <li><a class="sm-twitter" href="#"><span>Twitter</span></a></li>
+                            <li><a class="sm-facebook" href="#"><span>Facebook</span></a></li>
+                            <li><a class="sm-googleplus" href="#"><span>Google+</span></a></li>
+                          </ul>
+                        </div>
+                        <div class="foot-box foot-box-md col-md-6"> <span class="contact-email">info@schoolname.com</span> <span class="contact-phone">+91 XXXX XXXX XX</span> <span class="contact-fax">+91 XXXX XXXX XX</span></div>
+                        <div class="foot-box col-md-3"> &copy; 2019 <a href="#">schoolname.com</a>&nbsp;&nbsp;|&nbsp;&nbsp;All Rights Reserved.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+          </footer>
+        </div>
+</body>
+</html>
